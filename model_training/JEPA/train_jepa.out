@@ -1,0 +1,7 @@
+Dataset loaded: 981 MRI images and 83 tabular data
+Dataset loaded: 4642 MRI images and 83 tabular data
+[Epoch 001] train_loss=25.1102 val_loss=20.4243
+[Epoch 002] train_loss=20.3080 val_loss=20.0815
+[Epoch 003] train_loss=19.9290 val_loss=19.8488
+[Epoch 004] train_loss=19.8522 val_loss=19.8596
+[Epoch 005] train_loss=19.8175 val_loss=19.7671

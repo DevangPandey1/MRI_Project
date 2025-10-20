@@ -1,0 +1,4 @@
+Starting VQ-GAN training for ALPACA dataset
+Job started at: Tue Oct  7 06:09:17 MDT 2025
+VQ-GAN training completed at: Tue Oct  7 06:09:17 MDT 2025
+Checkpoint saved in: checkpoints/vq_gan/ALPACA_CSV/alpaca_training/

@@ -1,0 +1,4 @@
+name: ALPACA_CSV
+csv_file: /Users/rishipc/Documents/Studies/Fall 2025/Independent Study/ALPACA-3D/model_training/X_train.csv
+image_channels: 1
+augmentation: True

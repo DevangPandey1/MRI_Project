@@ -1,0 +1,4 @@
+  File "train_jepa.py", line 11
+    from __future__ import annotations
+    ^
+SyntaxError: future feature annotations is not defined
