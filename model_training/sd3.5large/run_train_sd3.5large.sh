@@ -19,8 +19,13 @@ module purge
 module load slurm/alpine
 module load anaconda
 
-# Activate your conda environment (replace with your actual env name)
+# Initialize conda for bash script (CRITICAL FIX)
+source /curc/sw/anaconda3/latest/etc/profile.d/conda.sh
+
+# Now activate your environment
 conda activate medical_sd
+
+pip install -r requirements.txt
 
 # Create logs directory if it doesn't exist
 mkdir -p logs
