@@ -2,7 +2,7 @@
 #SBATCH --job-name=medical_sd35
 #SBATCH --partition=aa100
 #SBATCH --qos=normal
-#SBATCH --account=ucb-general  # Replace with your allocation
+#SBATCH --account=ucb-general
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=8
@@ -11,18 +11,18 @@
 #SBATCH --time=1:00:00
 #SBATCH --output=logs/medical_sd35_%j.out
 #SBATCH --error=logs/medical_sd35_%j.err
-#SBATCH --mail-type=BEGIN,END,FAIL      # Events to notify on (job starts, ends, or fails)
-#SBATCH --mail-user=depa9289@colorado.edu   # Your CU email
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=depa9289@colorado.edu
 
 # Load necessary modules
 module purge
 module load slurm/alpine
 module load anaconda
 
-# Activate your conda environment (pre-created with dependencies)
-conda activate your_env_name
+# Activate your conda environment (replace with your actual env name)
+conda activate medical_sd
 
-# Create logs directory
+# Create logs directory if it doesn't exist
 mkdir -p logs
 
 # Run training
