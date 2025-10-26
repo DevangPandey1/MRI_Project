@@ -1,0 +1,23 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"slurm/alpine"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "slurm/alpine"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+/var/spool/slurmd/job18929555/slurm_script: line 23: /curc/sw/anaconda3/latest/etc/profile.d/conda.sh: Not a directory
+/projects/depa9289/software/anaconda/envs/medical_sd/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/projects/depa9289/software/anaconda/envs/medical_sd/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/projects/depa9289/ALPACA-3D/model_training/sd3.5large/main.py", line 9, in <module>
+    from dataset import create_dataloaders
+  File "/projects/depa9289/ALPACA-3D/model_training/sd3.5large/dataset.py", line 109, in <module>
+    ) -> Tuple[DataLoader, DataLoader]:
+NameError: name 'DataLoader' is not defined

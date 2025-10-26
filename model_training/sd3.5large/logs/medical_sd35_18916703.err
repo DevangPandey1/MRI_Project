@@ -1,0 +1,8 @@
+usage: conda [-h] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'deactivate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'skeleton', 'env', 'pack', 'token', 'repo', 'server', 'verify')
+usage: conda [-h] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'deactivate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'skeleton', 'env', 'server', 'token', 'repo', 'pack', 'verify')
+Traceback (most recent call last):
+  File "/projects/depa9289/ALPACA-3D/model_training/sd3.5large/main.py", line 3, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
