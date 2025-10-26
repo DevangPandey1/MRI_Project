@@ -1,10 +1,12 @@
 # dataset.py
+
 import torch
-from torch.utils.data import Dataset
+from torch.utils.data import Dataset, DataLoader  # ADD DataLoader here
 import numpy as np
 import nibabel as nib
 from typing import Dict, List, Tuple
 import pandas as pd
+
 
 class MedicalMRIDataset(Dataset):
     """
@@ -108,7 +110,6 @@ def create_dataloaders(
     num_workers: int = 4
 ) -> Tuple[DataLoader, DataLoader]:
     """Create train and validation dataloaders"""
-    from torch.utils.data import DataLoader
     
     train_dataset = MedicalMRIDataset(
         mri_paths=train_mri_paths,
